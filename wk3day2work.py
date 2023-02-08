@@ -31,11 +31,11 @@ print(list(map(lambda temp, place: (place, (9/5)*float(temp) + float(32.0)), tem
 # Exercise #4
 # Write a recursion function to perform the fibonacci sequence up to the number passed in.
 
-def factorial(number):
+def fibonacci(number):
     if number <= 1: 
         return 1
 
-    return (factorial(number-1) + factorial(number - 2))
+    return (fibonacci(number-1) + fibonacci(number - 2))
 
-print(factorial(5))
+print(fibonacci(5))
 
